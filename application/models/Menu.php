@@ -70,7 +70,7 @@ class Menu extends MY_Model
         $this->rest->initialize(array('server' => REST_SERVER));
         $this->rest->option(CURLOPT_PORT, REST_PORT);
         $retrieved = $this->rest->put('/maintenance/item/id/' . $record['code'], $record);
-    }
+    } 
 
     // Add a record to the DB
     function add($record)
